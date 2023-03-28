@@ -1,6 +1,6 @@
- /****************************************************************
+  /****************************************************************
 **                                                             **
-**                          TÍTOL:                             **
+**                       Display de 7 segment                  **
 **                                                             **
 **                                                             **
 **  NOM: Deivith Trujillo Meza                                 **
@@ -16,7 +16,7 @@ const byte segD = 8;
 const byte segE = 9;          
 const byte segF = 10;         
 const byte segG = 11;
-int t= 500;
+int tiempo= 500;
 //************************* SETUP *******************************
 void setup() {              // configura el final de la salida
  pinMode(segA, OUTPUT);
@@ -27,101 +27,71 @@ void setup() {              // configura el final de la salida
  pinMode(segF, OUTPUT);
  pinMode(segG, OUTPUT);
 
- digitalWrite(segA, LOW);  //0
+ digitalWrite(segA, HIGH);  //D
  digitalWrite(segB, LOW);
  digitalWrite(segC, LOW);
  digitalWrite(segD, LOW);
  digitalWrite(segE, LOW);
- digitalWrite(segF, LOW);
- digitalWrite(segG, HIGH);
-
-delay(t);
-
- digitalWrite(segA, HIGH);  //1
- digitalWrite(segB, LOW);
- digitalWrite(segC, LOW);
- digitalWrite(segD, HIGH);
- digitalWrite(segE, HIGH);
  digitalWrite(segF, HIGH);
- digitalWrite(segG, HIGH);
+ digitalWrite(segG, LOW);
 
- delay(t);
+delay(tiempo);
 
- digitalWrite(segA, LOW);  //2
- digitalWrite(segB, LOW);
+ digitalWrite(segA, LOW);  //E
+ digitalWrite(segB, HIGH);
  digitalWrite(segC, HIGH);
  digitalWrite(segD, LOW);
  digitalWrite(segE, LOW);
- digitalWrite(segF, HIGH);
- digitalWrite(segG, LOW);
-
- delay(t);
-
- digitalWrite(segA, LOW);  //3
- digitalWrite(segB, LOW);
- digitalWrite(segC, LOW);
- digitalWrite(segD, LOW);
- digitalWrite(segE, HIGH);
- digitalWrite(segF, HIGH);
- digitalWrite(segG, LOW);
-
- delay(t);
-
- digitalWrite(segA, HIGH);  //4
- digitalWrite(segB, LOW);
- digitalWrite(segC, LOW);
- digitalWrite(segD, HIGH);
- digitalWrite(segE, HIGH);
  digitalWrite(segF, LOW);
- digitalWrite(segG, LOW); 
+ digitalWrite(segG, LOW);
 
- delay(t);
+ delay(tiempo);
 
- digitalWrite(segA, LOW);  //5
+ digitalWrite(segA, HIGH);  //I
  digitalWrite(segB, HIGH);
- digitalWrite(segC, LOW);
- digitalWrite(segD, LOW);
- digitalWrite(segE, HIGH);
+ digitalWrite(segC, HIGH);
+ digitalWrite(segD, HIGH);
+ digitalWrite(segE, LOW);
  digitalWrite(segF, LOW);
- digitalWrite(segG, LOW);
+ digitalWrite(segG, HIGH);
 
- delay(t);
+ delay(tiempo);
 
- digitalWrite(segA, HIGH);  //6
+ digitalWrite(segA, HIGH);  //V
  digitalWrite(segB, HIGH);
  digitalWrite(segC, LOW);
  digitalWrite(segD, LOW);
  digitalWrite(segE, LOW);
- digitalWrite(segF, LOW);
- digitalWrite(segG, LOW);
-
- delay(t);
-
- digitalWrite(segA, LOW);  //7
- digitalWrite(segB, LOW);
- digitalWrite(segC, LOW);
- digitalWrite(segD, HIGH);
- digitalWrite(segE, HIGH);
  digitalWrite(segF, HIGH);
  digitalWrite(segG, HIGH);
 
- delay(t);
+ delay(tiempo);
 
- digitalWrite(segA, LOW);  //8
- digitalWrite(segB, LOW);
- digitalWrite(segC, LOW);
+ digitalWrite(segA, HIGH);  //I
+ digitalWrite(segB, HIGH);
+ digitalWrite(segC, HIGH);
+ digitalWrite(segD, HIGH);
+ digitalWrite(segE, LOW);
+ digitalWrite(segF, LOW);
+ digitalWrite(segG, HIGH); 
+
+ delay(tiempo);
+
+ digitalWrite(segA, HIGH);  //T
+ digitalWrite(segB, HIGH);
+ digitalWrite(segC, HIGH);
  digitalWrite(segD, LOW);
  digitalWrite(segE, LOW);
  digitalWrite(segF, LOW);
  digitalWrite(segG, LOW);
 
- delay(t);
+ delay(tiempo);
 
- digitalWrite(segA, LOW);  //9
+ digitalWrite(segA, HIGH);  //H
  digitalWrite(segB, LOW);
  digitalWrite(segC, LOW);
  digitalWrite(segD, HIGH);
- digitalWrite(segE, HIGH);
+ digitalWrite(segE, LOW);
  digitalWrite(segF, LOW);
  digitalWrite(segG, LOW);
 }
