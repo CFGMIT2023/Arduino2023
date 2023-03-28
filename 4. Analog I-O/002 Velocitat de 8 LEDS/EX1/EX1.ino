@@ -17,6 +17,8 @@ const byte led5 = 10;         // donar nom al pin 10 de l’Arduino
 const byte led6 = 11;         // donar nom al pin 11 de l’Arduino
 const byte led7 = 12;         // donar nom al pin 12 de l’Arduino
 const byte pot0 = A0;         // donar nom al pin A0 de l’Arduino
+int valPot0;  
+unsigned long velocitat = 20;        
 
 //********************************* SETUP *****************************************
 
@@ -67,6 +69,6 @@ void loop() {                      // inicia el bucle del programa
 
 
 
-}
+
 
 //******************************* FUNCIONS ****************************************
