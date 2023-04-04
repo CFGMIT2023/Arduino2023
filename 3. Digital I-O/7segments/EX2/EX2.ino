@@ -16,7 +16,7 @@ const byte segD = 8;
 const byte segE = 9;          
 const byte segF = 10;         
 const byte segG = 11;
-int t= 500;
+int t= 1000;
 //************************* SETUP *******************************
 void setup() {              // configura el final de la salida
  pinMode(segA, OUTPUT);
